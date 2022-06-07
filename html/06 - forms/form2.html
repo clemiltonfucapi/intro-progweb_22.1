@@ -3,39 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<title> Cadastro de DEV's</title>
+	
+	<link rel="stylesheet" type="text/css" href="form2.css">
 </head>
 
 <body>
 	<div> 
-		<h1>Cadastro de DEV's</h1>
-		<p> Complete suas informações </p>
+		<h1 id="titulo">Cadastro de DEV's</h1>
+		<p id="subtitulo"> Complete suas informações </p>
 	</div>
 
 	<form>
 		<fieldset>
 			<legend> Informações gerais </legend>
-			<div>
+			<div class="campo">
 				<label> <b>Nome</b> </label>
 				<input type="text" name="nome" id="nome">
 			</div> 
-			<div>
+			<div class="campo"> 
 				<label> <b>Sobrenome</b> </label>
 				<input type="text" name="sobrenome" id="sobrenome">
 			</div> 
-			<div>
+			<div class="campo">
 				<label> <b>Email</b> </label>
 				<input type="email" name="email" id="email">
 			</div> 
 		</fieldset>
 
-		<div>
+		<div class="campo">
 			<label> <b>De qual lado da WEB vc desenvolve?</b> </label>
 			<input type="radio" name="devweb" value="frontend"> Front-end
 			<input type="radio" name="devweb" value="backend"> Back-end
 			<input type="radio" name="devweb" value="fullstack"> Full-stack
 		</div>
 
-		<div>
+		<div class="campo">
 			<label> <b> Escolha o seu nivel</b> </label>
 			<select>
 					<option selected disabled> Selecione...</option>
@@ -46,7 +48,7 @@
 		</div>
 
 		<fieldset >
-			<div>
+			<div class="campo">
 				<label>  
 					<b> Selecione as tecnologias que você usar : </b>
 				</label>
@@ -77,7 +79,7 @@
 			</div>
 		</fieldset>
 
-		<div>
+		<div class="campo">
 			<label>
 				<b> Conte um pouco mais de sua experiencia: </b>
 			</label>
