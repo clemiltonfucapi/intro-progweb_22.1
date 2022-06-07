@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Cadastro de DEV's</title>
+</head>
+
+<body>
+	<div> 
+		<h1>Cadastro de DEV's</h1>
+		<p> Complete suas informações </p>
+	</div>
+
+	<form>
+		<fieldset>
+			<legend> Informações gerais </legend>
+			<div>
+				<label> <b>Nome</b> </label>
+				<input type="text" name="nome" id="nome">
+			</div> 
+			<div>
+				<label> <b>Sobrenome</b> </label>
+				<input type="text" name="sobrenome" id="sobrenome">
+			</div> 
+			<div>
+				<label> <b>Email</b> </label>
+				<input type="email" name="email" id="email">
+			</div> 
+		</fieldset>
+
+		<div>
+			<label> <b>De qual lado da WEB vc desenvolve?</b> </label>
+			<input type="radio" name="devweb" value="frontend"> Front-end
+			<input type="radio" name="devweb" value="backend"> Back-end
+			<input type="radio" name="devweb" value="fullstack"> Full-stack
+		</div>
+
+		<div>
+			<label> <b> Escolha o seu nivel</b> </label>
+			<select>
+					<option selected disabled> Selecione...</option>
+					<option>Junior</option>
+					<option>Pleno</option>
+					<option>Senior</option>
+			</select>
+		</div>
+
+		<fieldset >
+			<div>
+				<label>  
+					<b> Selecione as tecnologias que você usar : </b>
+				</label>
+
+				<input type="checkbox">
+				<label>HTML</label>
+
+				<input type="checkbox">
+				<label>CSS</label>
+
+				<input type="checkbox">
+				<label>Javascript</label>
+
+				<input type="checkbox">
+				<label>PHP</label>
+
+				<input type="checkbox">
+				<label>C#</label>
+
+				<input type="checkbox">
+				<label>Python</label>
+
+				<input type="checkbox">
+				<label>Java</label>
+
+				<input type="checkbox">
+				<label>Ruby</label>
+			</div>
+		</fieldset>
+
+		<div>
+			<label>
+				<b> Conte um pouco mais de sua experiencia: </b>
+			</label>
+			<br>
+			<textarea rows="6" style="width: 26em;" > </textarea>
+		</div>
+
+		<button type="submit"> Enviar</button> 
+	</form>
+
+</body>
+</html>
