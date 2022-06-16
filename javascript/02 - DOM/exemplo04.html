@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    <label>Nome: </label>
+    <input type="text" id="inputNome"><br>
+    <button onclick="inserir()">Inserir</button>
+    <button onclick="limpar()"> Limpar</button>
+    <br>
+    <h3>Lista de Nomes: </h3>
+    <ul id="listaNomes">
+        <li>José</li>
+    </ul>
+</body>
+<script>
+    function inserir() {
+        let texto = document.getElementById('inputNome').value;
+        //Criar um elemento
+        let item = document.createElement('li')
+        item.innerHTML = texto
+        console.log(item)
+
+        let lista = document.getElementById('listaNomes')
+        lista.appendChild(item)
+    }
+
+    function limpar() {
+
+    }
+</script>
+
+</html>

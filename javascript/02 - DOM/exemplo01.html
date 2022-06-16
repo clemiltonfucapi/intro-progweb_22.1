@@ -1,0 +1,29 @@
+<!-- selecionar elementos pela tag -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1> Mundo mágico do JS</h1>
+    <p>Corvinal</p>
+    <p>Grifinória</p>
+    <p>Sonserina</p>
+    <p>Lufa-Lufa</p>
+    <button onclick="definirCores()"> Definir Cores</button>
+    <script>
+        function definirCores() {
+            let cores = ["blue", "red", "green", "yellow"]
+                // recuperar os paragrafos (array)
+            let paragrafos = document.getElementsByTagName('p')
+            console.log(paragrafos)
+            let i;
+            for (i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.backgroundColor = cores[i]
+            }
+        }
+    </script>
+</body>
+
+</html>
