@@ -6,23 +6,30 @@
 
 <body>
 
-    <div style="background-color:green;width: 200px;height: 200px;margin: 10px;">
+    <div class="quadrado" style="background-color:green;width: 200px;height: 200px;margin: 10px;">
 
     </div>
-    <div style="background-color:green;width: 200px;height: 200px;margin:10px">
-
-    </div>
-
-    <div style="background-color:green;width: 200px;height: 200px;margin:10px">
+    <div class="quadrado" style="background-color:green;width: 200px;height: 200px;margin:10px">
 
     </div>
 
+    <div class="quadrado" style="background-color:green;width: 200px;height: 200px;margin:10px">
+
+    </div>
 
 
-    <button onclick="">Fundo Vermelho</button>
-    <button onclick="">Fundo Verde</button>
-    <button onclick="">Fundo Azul</button>
+
+    <button onclick="pintarQuadrado('red')">Fundo Vermelho</button>
+    <button onclick="pintarQuadrado('green')">Fundo Verde</button>
+    <button onclick="pintarQuadrado('blue')">Fundo Azul</button>
     <script>
+        function pintarQuadrado(cor) {
+            var q = document.getElementsByClassName('quadrado')
+            console.log(q)
+            q[1].style.backgroundColor = cor
+            q[0].style.backgroundColor = cor
+            q[2].style.backgroundColor = cor
+        }
     </script>
 </body>
 
